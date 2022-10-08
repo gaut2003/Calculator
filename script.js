@@ -40,3 +40,13 @@ function compute(is){
         } 
     }
 }
+
+// Preloader
+
+var loader = document.querySelector(".loader")
+window.addEventListener("load", faded);
+
+function faded(){
+    loader.classList.add("disppear");
+}
+
