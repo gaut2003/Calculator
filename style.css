@@ -50,6 +50,12 @@ button{
     font-size: larger;
     cursor: pointer;
 }
+
+button:hover{
+    background-color:#04ff00;
+    color: #121212;
+}
+
 #outside{
     color: white;
     border-radius: 5px;
