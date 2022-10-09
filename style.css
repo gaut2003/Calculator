@@ -30,7 +30,7 @@
 /* End of Prelaoder */
 
 body{
-    background-image: url(c10.jpg);
+    background-image: url(calc.jpg);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -74,20 +74,20 @@ button{
 }
 #val{
     /* border: 2px solid red; */
-    height: 55px;
+    height: 70px;
     width: 783px;
     margin-left: 100px;
-    color: white;
+    color: red;
     padding-left: 37px;
     padding-top: 20px;
     font-weight: bolder;
 }
 #res{
     /* border: 2px solid red; */
-    height: 50px;
+    height: 100px;
     width: 783px;
     margin-left: 100px;
-    color: white;
+    color: red;
     padding-left: 37px;
     padding-top: 25px;
     font-weight: bolder;
