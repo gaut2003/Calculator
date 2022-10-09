@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* Preloader */
 
 .loader{
@@ -47,6 +48,7 @@ button{
     font-weight: bolder;
     font-style: italic;
     font-size: larger;
+    cursor: pointer;
 }
 #outside{
     color: white;
