@@ -58,6 +58,7 @@ button{
     width: 1000px;
     height: 600px;
     padding: 5px;
+    margin-left:550px; 
 }
 #heading{
     margin: auto;
