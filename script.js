@@ -52,3 +52,9 @@ function faded(){
     loader.classList.add("disppear");
 }
 
+document.addEventListener('keypress', keypress_event);
+
+function keypress_event(e) {
+    if ('0123456789*+-/%().'.includes(e.key)) adder(e.key);
+    else if ('=' === e.key) compute(1);
+}
