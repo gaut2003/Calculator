@@ -33,7 +33,6 @@
 
 body {
     background-image: url(calc.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -46,46 +45,64 @@ button {
     width: 100px;
     height: 50px;
     margin: 2px 2px;
-    background-color: black;
-    color: #04ff00;
+    background-color: white;
+    color: #000000;
     border-radius: 20px;
     font-weight: bolder;
     font-style: italic;
     font-size: larger;
     cursor: pointer;
-    border: 2px inset rgb(214, 227, 130);
+    border: 4px inset #000000;
+    transition: background-color 100ms ease-in-out;
 }
 
 button:hover {
-    background-color: #04ff00;
-    color: #121212;
+    background-color: #269aff;
+    border: 4px inset #2121d3;
+    color: #e1f1ff;
+    box-shadow: 0 0.75em 0.75em -0.3em #2121d3;
+    transform: translateY(-0.15em);
+    cursor: pointer
+}
+
+#special {
+    background-color: #000000;
+    color: white;
+    transition: background-color 100ms ease-in-out;
+    border: 4px inset #ffffff;
+}
+
+#special:hover {
+    background-color: rgb(255, 3, 3);
+    border: 4px inset #000000;
+    box-shadow: 0 0.75em 0.75em -0.3em black;
+    transform: translateY(-0.15em);
+    cursor: pointer
 }
 
 #outside {
     color: white;
     border-radius: 5px;
-    margin: auto;
     margin-top: 100px;
     width: 1000px;
     height: 600px;
     padding: 5px;
-    margin-left: 550px;
+    margin-left: 150px;
 }
 
 #heading {
     width: 412px;
-    margin-left: 155px;
     padding-bottom: 25px;
-    font-size: xxx-large;
+    font-size: 80px;
     font-family: 'Caveat', cursive;
     text-align: center;
-    margin-bottom: 25px;
-    color: #cedccd;
+    margin-left: 50px;
+    color: #364349;
 }
 
 #btn {
-    margin: auto;
     margin-top: 20px;
+    margin-right: 250px;
     width: 815px;
 }
 
@@ -96,17 +113,16 @@ button:hover {
 #val {
     /* border: 2px solid red; */
     height: 60px;
-    background-color: black;
+    background-color: #000000;
     text-align: right;
     width: 480px;
-    margin-left: 100px;
-    color: rgb(214, 227, 130);
+    color: white;
     padding-right: 37px;
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bolder;
     border-radius: 20px;
-    border: 2px inset #04ff00;
+    border: 4px inset white;
 }
 
 #res {
@@ -116,12 +132,11 @@ button:hover {
     text-align: right;
     background-color: black;
     margin-top: 25px;
-    margin-left: 100px;
-    color: rgb(214, 227, 130);
+    color: white;
     padding-right: 37px;
     padding-top: 20px;
     font-weight: bolder;
     font-size: x-large;
     border-radius: 20px;
-    border: 2px inset #04ff00;
+    border: 4px inset #ffffff;
 }
