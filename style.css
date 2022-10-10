@@ -30,15 +30,13 @@
 /* End of Prelaoder */
 
 body{
-    background: url(calc.jpg);
-    /* background-color: aqua; */
+    background-image: url(calc.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    background-position:center;
+    background-position: center;
     background-size: cover;
-
 }
 button{
     width: 100px;
@@ -63,7 +61,7 @@ button:hover{
     border-radius: 5px;
     margin: auto;
     margin-top: 100px;
-    width: 100%;
+    width: 1000px;
     height: 600px;
     padding: 5px;
     margin-left:550px; 
@@ -86,7 +84,7 @@ button:hover{
     height: 70px;
     width: 783px;
     margin-left: 100px;
-    color: #ffffff;
+    color: red;
     padding-left: 37px;
     padding-top: 20px;
     font-weight: bolder;
@@ -96,7 +94,7 @@ button:hover{
     height: 100px;
     width: 783px;
     margin-left: 100px;
-    color: #eed30a;
+    color: red;
     padding-left: 37px;
     padding-top: 25px;
     font-weight: bolder;
