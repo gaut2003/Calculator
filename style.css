@@ -32,7 +32,7 @@
 /* End of Prelaoder */
 
 body {
-    background-image: url(calc1.jpeg);
+    background-image: url(calc.jpg);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -61,7 +61,7 @@ button:hover {
     border: 4px inset #2121d3;
     color: #e1f1ff;
     box-shadow: 0 0.79em 0.79em -0.3em #2121d3;
-    transform: translateY(-0.15em);
+    transform: translateY(-0.2em);
     cursor: pointer
 }
 
@@ -73,9 +73,9 @@ button:hover {
 }
 
 #special:hover {
-    background-color: rgb(243, 15, 3);
+    background-color: rgb(223, 19, 3);
     border: 4px inset green;
-    box-shadow: 0 0.75em 0.75em -0.3em black;
+    box-shadow: 0 0.79em 0.79em -0.2em brown;
     transform: translateY(-0.15em);
     cursor: pointer
 }
