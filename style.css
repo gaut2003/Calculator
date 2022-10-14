@@ -52,7 +52,7 @@ button {
     font-style: italic;
     font-size: larger;
     cursor: pointer;
-    border: 4px inset #000000;
+    border: 3.5px inset #000000;
     transition: background-color 100ms ease-in-out;
 }
 
@@ -60,8 +60,8 @@ button:hover {
     background-color: #269aff;
     border: 4px inset #2121d3;
     color: #e1f1ff;
-    box-shadow: 0 0.75em 0.75em -0.3em #2121d3;
-    transform: translateY(-0.15em);
+    box-shadow: 0 0.79em 0.79em -0.3em #2121d3;
+    transform: translateY(-0.2em);
     cursor: pointer
 }
 
@@ -73,9 +73,9 @@ button:hover {
 }
 
 #special:hover {
-    background-color: rgb(255, 3, 3);
-    border: 4px inset #000000;
-    box-shadow: 0 0.75em 0.75em -0.3em black;
+    background-color: rgb(223, 19, 3);
+    border: 4px inset green;
+    box-shadow: 0 0.79em 0.79em -0.2em brown;
     transform: translateY(-0.15em);
     cursor: pointer
 }
