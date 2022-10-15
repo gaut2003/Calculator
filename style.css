@@ -13,7 +13,7 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
     display: flex;
@@ -40,7 +40,26 @@ body {
     overflow: hidden;
     background-position: bottom;
     background-size: cover;
+}
+
+.top-buttons {
     display: flex;
+    align-items: right;
+  }
+
+button {
+    width: 100px;
+    height: 50px;
+    margin: 2px 2px;
+    background-color: white;
+    color: #000000;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    cursor: pointer;
+    border: 3.5px inset #000000;
+    transition: background-color 100ms ease-in-out;
 }
 
 button:hover {
@@ -150,4 +169,16 @@ button {
         width: 80%;
         height: 100%;
     }
+}
+
+#github-icon {
+    margin: 10px;
+    border-radius: 18px;
+    border: 0.5px inset #000000
+}
+
+#github-icon {
+    margin: 10px;
+    border-radius: 18px;
+    border: 0.5px inset #000000
 }
