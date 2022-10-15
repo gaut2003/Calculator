@@ -52,9 +52,27 @@ function faded(){
     loader.classList.add("disppear");
 }
 
-document.addEventListener('keypress', keypress_event);
+//used keydown inseatd of keypress....in order to use the backspace key
+document.addEventListener('keydown', keypress_event);
+
+
 
 function keypress_event(e) {
     if ('0123456789*+-/%().'.includes(e.key)) adder(e.key);
     else if ('=' === e.key) compute(1);
+
+    //added the enter key as well to get the result
+    else if ('Enter' === e.key) compute(1);
+       //backspace for removing the last input
+       if (e.key === "Backspace") {
+        var resultInput = valEl.innerText;
+        //remove the last element in the string
+        valEl.innerText = resultInput.substring(0, valEl.innerText.length - 1);
+      }     
+         // Delete key for removing all the input
+    if (e.key === "Delete") {
+        var resultInput = valEl.innerText;
+        //remove all elements in the string
+        valEl.innerText = 0
+      }
 }
