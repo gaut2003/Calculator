@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+    <!-- added a icon logo in the titlebar -->
+    <link rel="icon" href="calculator.ico" type="image/icon type">
+
+    
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <a href="index.html" class="calc-basica">Basic</a>
+            <a href="calculadora-cientifica.html" class="calc-cientifica">Scientific</a>
+        </div>
+    </nav>
+    <div class="loader">
+        <img src="loader.gif" alt="">
+    </div>
+    
+    <div id="outside">
+        
+        <h1 id="heading">Calculator</h1>
+        <div class="top-buttons">
+            <a href="https://github.com/gaut2003/Calculator">
+              <img src="assets/GitHubLight.svg" alt="Sun Icon" height="30" width="30" id="github-icon">
+            </a>
+        </div>
+        <div>
+            <div>
+                <h1 id="val"> </h1>
+            </div>
+            <div>
+                <p id="res"></p>
+            </div>
+            <div id="btn">
+				<div class="btn-inside">
+                    <button id="special" onclick="clearer()">C</button>
+                    <button id="special" onclick="clearLast()"><--</button>
+                    <button id="special" onclick="compute(1)">=</button>
+                    <button id="special" onclick="adder('π')">π</button>
+                    <button id="special" onclick="adder('%')">%</button>
+                </div>
+                <div class="btn-inside">
+                    <button onclick="adder('1')">1</button>
+                    <button onclick="adder('2')">2</button>
+                    <button onclick="adder('3')">3</button>
+                    <button id="special" onclick="adder('x^')">x^</button>
+                    <button id="special" onclick="adder('/')">/</button>
+                </div>
+                <div class="btn-inside">
+                    <button onclick="adder('4')">4</button>
+                    <button onclick="adder('5')">5</button>
+                    <button onclick="adder('6')">6</button>
+                    <button id="special" onclick="adder('+')">In</button>
+                    <button id="special" onclick="adder('*')">*</button>
+                </div>
+                <div class="btn-inside">
+                    <button onclick="adder('7')">7</button>
+                    <button onclick="adder('8')">8</button>
+                    <button onclick="adder('9')">9</button>
+                    <button id="special" onclick="adder('√')">√</button>
+                    <button id="special" onclick="adder('-')">-</button>
+                </div>
+                <div class="btn-inside">
+                    <button id="special" onclick="adder('+-')">+-</button>
+                    <button onclick="adder('0')">0</button>
+                    <button id="special" onclick="adder('.')">.</button>
+                    <button id="special" onclick="adder('x²')">x²</button>
+                    <button id="special" onclick="adder('+')">+</button>
+                </div>
+				<div class="btn-inside">
+                    <button id="special" onclick="adder('(')">(</button>
+                    <button id="special" onclick="adder(')')">)</button>
+                    <button id="special" onclick="adder('cos')">cos</button>
+                    <button id="special" onclick="adder('sin')">sin</button>
+                    <button id="special" onclick="adder('.')">tan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

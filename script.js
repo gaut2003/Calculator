@@ -4,9 +4,16 @@ function clearer(){
     valEl.innerText = ""
     resEl.innerText = ""
 }
+
+function clearLast(){
+    valEl.innerText = valEl.innerText.slice(0, -1)
+    resEl.innerText = resEl.innerText.slice(0, -1)
+}
+
+
 function adder(k){
     valEl.innerText += k
-    if(k=='*' || k=='+' || k=='-' || k=='/' || k=='%'){
+    if(k=='*' || k=='+' || k=='-' || k=='/' || k=='%' || k=='π'){
         compute(0)
     }
 }
@@ -14,14 +21,17 @@ function compute(is){
     let temp = valEl.innerText, i
     let t = temp[temp.length-1];
     for(i=0;i<temp.length-1;i++){
-        if((temp[i]=='*' || temp[i]=='+' || temp[i]=='-' || temp[i]=='/' || temp[i]=='%') && i!=0){
+        if((temp[i]=='*' || temp[i]=='+' || temp[i]=='-' || temp[i]=='/' || temp[i]=='%' || temp[i]=='π') && i!=0){
             break;
         }
     }
-    if(i!=temp.length-1){
+    if(i!=temp.length-1 || temp.charAt(temp.length - 1) == 'π'){
         let part1 = parseFloat(temp.substring(0,i));
         let part2 = parseFloat(temp.substring(i+1));
         let k5 = temp[i];
+        if(temp.charAt(temp.length - 1) == 'π'){
+        k5 = 'π'
+        }
         if(k5=='+'){
             resEl.innerText = (part1)+(part2);
         }else if(k5=='-'){
@@ -30,6 +40,10 @@ function compute(is){
             resEl.innerText = (part1)*(part2);
         }else if(k5=='%'){
             resEl.innerText = (part1)%(part2);
+        }else if(k5=='/'){
+            resEl.innerText = (part1)/(part2);
+        }else if(k5=='π'){
+            resEl.innerText = (part1)*(3.14);
         }else{
             resEl.innerText = (part1)/(part2);
         }
