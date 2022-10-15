@@ -122,7 +122,7 @@ button {
 
 #val {
     /* border: 2px solid red; */
-    height: 60px;
+    height: 70px;
     background-color: #000000;
     text-align: right;
     color: white;
@@ -142,4 +142,12 @@ button {
     border-radius: 20px;
     border: 4px inset #ffffff;
 
+}
+
+@media only screen and (max-width: 600px) {
+    #outside {
+        gap: 10px;
+        width: 80%;
+        height: 100%;
+    }
 }
