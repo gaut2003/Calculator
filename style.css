@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
     display: flex;
@@ -40,6 +40,11 @@ body {
     background-position: bottom;
     background-size: cover;
 }
+
+.top-buttons {
+    display: flex;
+    align-items: right;
+  }
 
 button {
     width: 100px;
@@ -139,4 +144,10 @@ button:hover {
     font-size: x-large;
     border-radius: 20px;
     border: 4px inset #ffffff;
+}
+
+#github-icon {
+    margin: 10px;
+    border-radius: 18px;
+    border: 0.5px inset #000000
 }
