@@ -36,15 +36,15 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+   
     background-position: bottom;
     background-size: cover;
 }
 
 button {
-    width: 100px;
-    height: 50px;
-    margin: 2px 2px;
+    width: 9vw;
+    height: 11vh;
+    margin: 0.6vh 0.7vw;
     background-color: white;
     color: #000000;
     border-radius: 20px;
@@ -83,43 +83,42 @@ button:hover {
 #outside {
     color: white;
     border-radius: 5px;
-    margin-top: 100px;
-    width: 1000px;
-    height: 600px;
-    padding: 5px;
-    margin-left: 150px;
+    margin-top: 2vh;
+    justify-content: left;
+    height: 100vh;
+    margin-bottom: 4vh;
+    margin-left: 7%;
 }
 
 #heading {
-    width: 412px;
-    padding-bottom: 25px;
-    font-size: 80px;
+    
+    padding-bottom: 2vh;
+    font-size: 4rem;
     font-family: 'Caveat', cursive;
-    text-align: center;
-    margin-left: 50px;
+    
+    margin-left: 6vw;
     color: #364349;
 }
 
 #btn {
     margin-top: 20px;
-    margin-right: 250px;
-    width: 815px;
+    
 }
 
 .btn-inside {
-    width: 900px;
+    width: 70vw;
 }
 
 #val {
     /* border: 2px solid red; */
-    height: 60px;
+    height: 7vh;
     background-color: #000000;
     text-align: right;
-    width: 480px;
+    width: 48vw;
     color: white;
-    padding-right: 37px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-right: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
     font-weight: bolder;
     border-radius: 20px;
     border: 4px inset white;
@@ -127,16 +126,76 @@ button:hover {
 
 #res {
     /* border: 2px solid red; */
-    height: 50px;
-    width: 480px;
+    height: 7vh;
+    width: 48vw;
     text-align: right;
     background-color: black;
-    margin-top: 25px;
+    margin-top: 4vh;
     color: white;
-    padding-right: 37px;
-    padding-top: 20px;
+    padding-right: 4vw;
+    padding-top: 2vh;
     font-weight: bolder;
     font-size: x-large;
     border-radius: 20px;
     border: 4px inset #ffffff;
+}
+
+@media screen and (max-width:700px) {
+    #heading{
+       
+    text-align: center;
+    
+    }
+    #val {
+        /* border: 2px solid red; */
+        height: 7vh;
+        background-color: #000000;
+        text-align: right;
+        width: 76%;
+        color: white;
+        margin-left:9%;
+        margin-right: 12%;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+        font-weight: bolder;
+        border-radius: 20px;
+        border: 4px inset white;
+    }
+    #res{
+        height: 7vh;
+        width: 76%;
+        text-align: right;
+        background-color: black;
+        margin-top: 4vh;
+        color: white;
+        margin-left: 9%;
+        margin-right: 12%;
+        padding-top: 2vh;
+        font-weight: bolder;
+        font-size: x-large;
+        border-radius: 20px;
+        border: 4px inset #ffffff;
+    }
+
+    
+.btn-inside {
+    width: 80%;
+    margin-left: 12%;
+    margin-right: 12%;
+    
+}
+button {
+    width: 12vw;
+    height: 11vh;
+    margin: 0.6vh 0.7vw;
+    background-color: white;
+    color: #000000;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    cursor: pointer;
+    border: 3.5px inset #000000;
+    transition: background-color 100ms ease-in-out;
+}
 }
