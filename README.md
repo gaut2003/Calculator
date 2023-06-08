@@ -1,5 +1,5 @@
 # Calculator
-A mini calculator made by Gautam Agarwal.
+A mini calculator made by Gautam Agarwalll.
 
 A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.
 
